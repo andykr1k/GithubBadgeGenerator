@@ -5,4 +5,4 @@ main.o: main.cpp
 	g++ main.cpp -o main.o -c
 
 clean:
-	rm -f *.o generator.x
+	rm -f *.o generator.x GENERATEDREADME.md
