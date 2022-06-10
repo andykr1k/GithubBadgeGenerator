@@ -11,9 +11,9 @@
 
 ## Getting Started...
 
-### Clone the code!
+### Clone the code or Download as Zip!
 ```
-git clone 
+git clone https://github.com/andykr1k/GithubBadgeGenerator.git
 ```
 
 ### Go to directory
