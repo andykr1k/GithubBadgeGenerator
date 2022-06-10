@@ -13,8 +13,8 @@ int main() {
     string styleString;
     int color;
     int style;
-    vector<string> colors = {"", "color=red", "color=blue", "color=purple", "color=green", "color=yellow", "color=pink", "color=orange", "color=brown", "color=grey"};
-    vector<string> styles = {"\"/>", "style=for-the-badge\"/>"};
+    vector<string> colors = {"?", "?color=red", "?color=blue", "?color=purple", "?color=green", "?color=yellow", "?color=pink", "?color=orange", "?color=brown", "?color=grey"};
+    vector<string> styles = {"\"/>", "&style=for-the-badge\"/>"};
 
     system("clear");
     cout << "Whose repo are you generating badges for: ";
@@ -54,12 +54,12 @@ int main() {
     string line4 ="<img alt=\"GitHub Closed Issues\" src=\"https://img.shields.io/github/issues-closed/";
     string line5 = "<img alt=\"GitHub Contributors\" src=\"https://img.shields.io/github/contributors/";
     string line6 = "<img alt=\"GitHub Commit Activity (Week)\" src=\"https://img.shields.io/github/commit-activity/w/";
-    string badge1 = line1 + repo + "?" + colorString + "&" + styleString;
-    string badge2 = line2 + repo + "?" + colorString + "&" + styleString;
-    string badge3 = line3 + repo + "?" + colorString + "&" + styleString;
-    string badge4 = line4 + repo + "?" + colorString + "&" + styleString;
-    string badge5 = line5 + repo + "?" + colorString + "&" + styleString;
-    string badge6 = line6 + repo + "?" + colorString + "&" + styleString;
+    string badge1 = line1 + repo + colorString + styleString;
+    string badge2 = line2 + repo + colorString + styleString;
+    string badge3 = line3 + repo + colorString + styleString;
+    string badge5 = line5 + repo + colorString + styleString;
+    string badge4 = line4 + repo + colorString + styleString;
+    string badge6 = line6 + repo + colorString + styleString;
 
     //Open File
     ofstream File("GENERATEDREADME.md");
