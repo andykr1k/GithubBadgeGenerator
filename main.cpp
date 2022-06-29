@@ -67,6 +67,8 @@ int main() {
     File << "# ";
     File << repoTitle << endl;
     File << endl;
+    File << "# Summary" << endl;
+    File << endl;
     File << "<div>" << endl;
     File << badge1 << endl;
     File << badge2 << endl;
@@ -75,6 +77,9 @@ int main() {
     File << badge5 << endl;
     File << badge6 << endl;
     File << "</div>" << endl;
+    File << endl;
+    File << "# References" << endl;
+    File << endl;
     // Close the file
     File.close();
 
