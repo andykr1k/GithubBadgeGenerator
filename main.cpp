@@ -62,7 +62,7 @@ int main() {
     string badge6 = line6 + repo + colorString + styleString;
 
     //Open File
-    ofstream File("READ.md");
+    ofstream File("/Users/andrew/Desktop/Tools/READ.md");
     // Write to the file
     File << "# ";
     File << repoTitle << endl;
